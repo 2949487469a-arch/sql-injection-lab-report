@@ -29,7 +29,7 @@
 1. 构造永真条件  
    `TrackingId=xyz' AND '1'='1`  
    → 页面出现 “Welcome back”，说明数据库查询正常返回结果。
-   ![输入图片说明](/imgs/2026-05-14/CUVwVwe6L6eysGnZ.png)
+   ![输入图片说明](./imgs/2026-05-14/SQLimage/b9dd51d2-0329-4290-a344-201654379271.png)
 2. 构造永假条件  
    `TrackingId=xyz' AND '1'='2`  
    → 页面 **不** 出现 “Welcome back”，说明 `AND '1'='2'` 让整个条件为假。
