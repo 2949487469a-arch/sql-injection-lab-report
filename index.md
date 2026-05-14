@@ -33,7 +33,7 @@
 2. 构造永假条件  
    `TrackingId=xyz' AND '1'='2`  
    → 页面 **不** 出现 “Welcome back”，说明 `AND '1'='2'` 让整个条件为假。
-   ![输入图片说明](/imgs/2026-05-14/tGAjCVcrPaqHC4Rn.png)
+   ![输入图片说明](./imgs/2026-05-14/SQLimage/6b80acf4-80e8-444b-81f5-af2dd1508cef.png)
 **结论：**  
 两次测试的响应差异证实 `TrackingId` 参数存在 SQL 注入，且为**条件响应型布尔盲注**。注入点位于 Cookie 值中，闭合方式为单引号。
 **5.漏洞利用** 
