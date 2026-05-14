@@ -40,7 +40,7 @@
    - 5.1 确认 users 表存在
 `TrackingId=xyz' AND (SELECT 'a' FROM users LIMIT 1)='a`
 （这个payload的意义：如果存在一个users表，就临时*创建*一个a取出来与另一个a对比，则永真返回welcome back，而如果表不存在，取不出来就是一个空值与a对比，永假不返回welcome back，这里的a值可以是任意值，并不是之前存在在users表中的，加LIMIT 1主要是只返回一行数据，防止子查询会返回多行 `'a'`，与 `'a'` 比较会直接导致数据库报错（“子查询返回多于一行”），可能使应用抛出 500 错误，干扰测试）
-![输入图片说明](/imgs/2026-05-14/2bg56Qqay81TfXuV.png)
+![输入图片说明](./imgs/2026-05-14/SQLimage/2b9dc9e5-4ceb-4ff8-a71a-02e70a09c950.png)
 “Welcome back” 出现 → `users` 表存在。
    - 5.2 确认  administrator 用户存在
 `TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator')='a`
