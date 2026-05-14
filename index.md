@@ -67,7 +67,7 @@
 这里对两个参数进行对比，使用inturder的**Custom iterator**来进行同时遍历，进而求出每个位置的密码
 ![输入图片说明](/imgs/2026-05-14/6MAehGmC69af0FVT.png)
 对第一个参数密码位置用Numbers，不需要a-z
-![输入图片说明](/imgs/2026-05-14/Z3fVgOmLIBg9J3Wi.png)
+![输入图片说明](/imgs/2026-05-14/SQLimage/b7a89039-b49f-417c-a81d-71cfe68d00b2.png)
 对第二个参数密码的值用Brute forcer，，注意时使用Brute forcer的时候长度min和max都要设置为1，不然组合数过多，也可以是其他的，例如simper list，但是需要手动输入字符，也可以创建一个文件用来存储可能的密码值，需要用的load上去就行，这里不作演示
 
 ![输入图片说明](./imgs/2026-05-14/SQLimage/75e1cfb8-297e-4a04-9088-37166bb0efbe.png)
