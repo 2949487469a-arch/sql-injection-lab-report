@@ -52,7 +52,7 @@
 当 `N=20` 时，“Welcome back” **消失**，确定密码长度为 20 个字符。`TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>1)='a`
 将包发送到Burp中的intruder中来进行密码长度验证，使用sinper模式中的number对密码长度位置进行单参数遍历一至二十
 （为什么不直接猜测密码，先测试密码长度？-   先确定长度是一种**工程优化**，用很少的请求换取清晰的边界，让后续猜解过程更高效、可靠。）
-![输入图片说明](/imgs/2026-05-14/dnfcTFc4wCQUd2j2.png)
+![输入图片说明](./imgs/2026-05-14/SQLimage/10e88b0d-24ec-4d60-bed9-93cabf429e74.png)
 ![输入图片说明](/imgs/2026-05-14/BYBrMUC6x97GwCLr.png)
 这里19的时候还是返回welcome，20不返回，从length上面也可以分析出来到二十响应length明显发生变化，因此确定其密码长度大于19小于20
 
