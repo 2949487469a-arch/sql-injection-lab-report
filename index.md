@@ -44,7 +44,7 @@
 “Welcome back” 出现 → `users` 表存在。
    - 5.2 确认  administrator 用户存在
 `TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator')='a`
-![输入图片说明](/imgs/2026-05-14/23EDpd0ZFIR89cgN.png)
+![输入图片说明](./imgs/2026-05-14/SQLimage/21054675-84e2-4ab5-ab12-12484630a409.png)
 “Welcome back” 出现 → 用户 `administrator` 存在。
 
    - 5.3 判断密码长度
