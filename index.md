@@ -65,7 +65,7 @@
   - 依次执行偏移 1 到 20，收集所有字符，拼接得到完整密码
 
 这里对两个参数进行对比，使用inturder的**Custom iterator**来进行同时遍历，进而求出每个位置的密码
-![输入图片说明](/imgs/2026-05-14/6MAehGmC69af0FVT.png)
+![输入图片说明](./imgs/2026-05-14/SQLimage/fb564243-d6b5-4921-a00d-12f0aaa5958f.png)
 对第一个参数密码位置用Numbers，不需要a-z
 ![输入图片说明](/imgs/2026-05-14/SQLimage/b7a89039-b49f-417c-a81d-71cfe68d00b2.png)
 对第二个参数密码的值用Brute forcer，，注意时使用Brute forcer的时候长度min和max都要设置为1，不然组合数过多，也可以是其他的，例如simper list，但是需要手动输入字符，也可以创建一个文件用来存储可能的密码值，需要用的load上去就行，这里不作演示
